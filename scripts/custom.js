@@ -10,7 +10,7 @@ $(document).ready(function() {
       scale: [0, 1],
       delay: 0,
       elasticity: 10,
-      duration: 500,
+      duration: 300,
       direction: 'normal',
       loop: false,
       autoplay: false,
@@ -31,7 +31,7 @@ $(document).ready(function() {
             delay: 500,
             scale: 0,
             opacity: 0,
-            duration: 1000,
+            duration: 300,
           });
           return;
         }
@@ -66,7 +66,7 @@ var ani1 = anime({
   scale: {
     value: [.5, .7],
     delay: 500,
-    duration: 500
+    duration: 250
   },
   translateX:
     {
@@ -74,12 +74,12 @@ var ani1 = anime({
         return [-$(window).width(), 0];
       },
       delay: 500,
-      duration: 1000
+      duration: 500
     },
   translateY: {
     value: [-$(window).height()*2, 0],
     delay: 500,
-    duration: 1000
+    duration: 500
   },
   rotate: [200],
   elasticity: 400,
@@ -114,14 +114,14 @@ var aniAll = anime({
     value: function(el, index){
       return colors[4-index];
     },
-    duration: 1000,
+    duration: 500,
     delay: function(el, index) {
       return index * anime.random(150, 80);
     }
   },
   rotate: [200, 560],
   scale: [.5, .7],
-  duration: 2000,
+  duration: 1000,
   delay: function(el, index) {
     return index * anime.random(150, 80);
   },
