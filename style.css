@@ -1,0 +1,138 @@
+@font-face {
+  font-family: Cornerstone;
+  src: url('fonts/Cornerstone.ttf');
+}
+
+html, body {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto Mono;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, #02111C, #121C25);
+  /*border: 5px solid #FFD16;
+  height: calc(100% - 10px);*/
+  width: 100%;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #B23A48;
+}
+
+.hidden {
+  display: none;
+}
+.title > * {
+  display: inline-block;
+}
+
+.char3 {
+  color: #B23A48
+}
+.title {
+  /*font-family: Cornerstone;*/
+  opacity: 1;
+  font-size: 150px;
+  margin: 0;
+}
+
+.title > * {
+  opacity: 0;
+}
+
+a {
+  color: #A85751;
+  text-decoration: none;
+}
+
+.container  {
+  padding: 30px;
+  position: relative;
+}
+
+.border {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 0px solid #fff;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 25px;
+  opacity: 0;
+}
+.name {
+  opacity: 0;
+}
+
+.point {
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.p-one {
+  background: #B23A48;
+}
+.p-two {
+  background: #06D6A0;
+}
+.p-three {
+  background: #FFD166;
+}
+.p-four {
+  background: #E4FFE1;
+}
+.p-five {
+  background: #247BA0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and ( max-width: 767px ) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 100px;
+  }
+
+  .point {
+    width: 20px;
+    height: 20px;
+  }
+
+  .border {
+    display: none;
+  }
+}
+
+@media screen and ( max-width: 480px ) {
+  h1 {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .point {
+    width: 16px;
+    height: 16px;
+  }
+}
